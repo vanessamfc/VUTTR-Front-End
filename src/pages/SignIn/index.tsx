@@ -16,19 +16,40 @@ function SignIn() {
       <Flex
         bg="#fff"
         w="380px"
-        h="400px"
+        h="380px"
         boxShadow="0px 0px 15px -2px #1c1c1c"
         borderRadius="10px"
         margin="0 10px"
-        padding="10px"
+        padding="20px"
         direction="column"
+        fontSize="40px"
+        alignItems="center"
+        fontWeight="bold"
       >
         VUTTR
-        <FormControl id="email">
+        <FormControl
+          display="flex"
+          flexDirection="column"
+          padding="5px"
+          id="email"
+        >
           <FormLabel>Email</FormLabel>
-          <Input border="gray.200" focusBorderColor="purple.700" type="email" />
+          <Input
+            marginBottom="10px"
+            border="1px solid gray"
+            focusBorderColor="purple.300"
+            type="email"
+          />
           <FormLabel>Senha</FormLabel>
-          <Input type="password" />
+          <Input
+            border="1px solid gray"
+            focusBorderColor="purple.300"
+            type="password"
+          />
+          <Button marginTop="30px" w="100%" colorScheme="yellow">
+            {" "}
+            texe
+          </Button>
         </FormControl>
       </Flex>
     </Center>
