@@ -8,13 +8,11 @@ import {
   FormLabel,
   Center,
   FormHelperText,
-  Text,
-  Link,
 } from "@chakra-ui/core";
 
-function SignIn() {
+function SignUp() {
   return (
-    <Center bg="#553C9A" h="100vh">
+    <Center bg="#F7FAFC" h="100vh">
       <Flex
         bg="#fff"
         w="380px"
@@ -50,20 +48,12 @@ function SignIn() {
           />
           <Button marginTop="30px" w="100%" colorScheme="yellow">
             {" "}
-            Entrar
+            texe
           </Button>
-          <Flex justifyContent="center">
-            <Text paddingTop="5px" fontSize="sm">
-              Ainda não possui uma conta?{" "}
-              <Link color="purple.700" href="/sign-up">
-                Inscreva-se
-              </Link>
-            </Text>
-          </Flex>
         </FormControl>
       </Flex>
     </Center>
   );
 }
 
-export default SignIn;
+export default SignUp;

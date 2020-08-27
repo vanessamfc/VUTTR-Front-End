@@ -8,8 +8,10 @@ import {
   Input,
   InputGroup,
   Button,
+  useDisclosure,
 } from "@chakra-ui/core";
 import { FiSearch } from "react-icons/fi";
+import Modal from "../../components/NewModal";
 
 function Home() {
   return (
@@ -50,9 +52,14 @@ function Home() {
                 padding="2px 0 0 0"
                 children={<FiSearch color="#718096" />}
               />
-              <Input type="phone" placeholder="Search" />
+              <Input
+                border="1px solid gray"
+                focusBorderColor="purple.300"
+                type="text"
+                placeholder="Search"
+              />
             </InputGroup>
-            <Button colorScheme="yellow">texe</Button>
+            <Button colorScheme="yellow">Adicionar</Button>
           </Flex>
 
           <List spacing={3} w="80%" color="#fff" paddingTop="10px">
@@ -65,6 +72,7 @@ function Home() {
           </List>
         </Flex>
       </Flex>
+      <Modal />
     </>
   );
 }
